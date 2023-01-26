@@ -1,0 +1,66 @@
+:root {
+    --fontsize-multiplier: 2;
+    --applicant-header-fontsize: 16px;
+    --applicant-goal-fontsize: 14px;
+    --applicant-education-fontsize: 14px;
+    --applicant-footer-fontsize: 12px;
+    --h3-title-fontsize: 20px;
+    --h4-title-fontsize: 15px;
+}
+
+div[name="Applicant Resume"] {
+    border: 4px inset black;
+    /*background-color: hsla(240, 100%, 50%, 0.20);*/
+    box-shadow: 12px 12px gray;
+}
+
+div[name="Applicant Header"] {
+
+    font-size: calc(var(--applicant-header-fontsize) * var(--fontsize-multiplier));
+    text-align: left;
+}
+
+div[name="Applicant Goals"] > h3 {
+    font-size: calc(var(--h3-title-fontsize) * var(--fontsize-multiplier));
+    text-align: center;
+}
+
+div[name="Applicant Goals"] > p {
+    margin: 0% 05%;
+    font-size: calc(var(--applicant-goal-fontsize) * var(--fontsize-multiplier));
+    text-align: left;
+}
+
+div[name="Skills"] > h3 {
+    font-size: calc(var(--h3-title-fontsize) * var(--fontsize-multiplier));
+    text-align: center;
+}
+
+div[name="Skills"] > h4 {
+    margin: 0% 05%;
+    font-size: calc(var(--h4-title-fontsize) * var(--fontsize-multiplier));
+    text-align: left;
+}
+
+div[name="Education"] > h3 {
+    font-size: calc(var(--h3-title-fontsize) * var(--fontsize-multiplier));
+    text-align: center;
+}
+
+div[name="Education"] > h4 {
+    margin: 0% 05%;
+    font-size: calc(var(--h4-title-fontsize) * var(--fontsize-multiplier));
+    text-align: left;
+}
+
+div[name="Education"] > p {
+    margin: 0% 05%;
+    font-size: calc(var(--applicant-education-fontsize) * var(--fontsize-multiplier));
+    text-align: left;
+}
+
+footer {
+    margin: 0% 05%;
+    font-size: calc(var(--h3-title-fontsize) * 0.8);
+    text-align: left;
+}
